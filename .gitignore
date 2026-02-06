@@ -1,0 +1,9 @@
+# API
+api/vendor/
+api/var/
+api/.env.local
+
+# Front
+front/node_modules/
+front/dist/
+front/.angular/
