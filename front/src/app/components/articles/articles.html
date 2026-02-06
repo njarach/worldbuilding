@@ -1,0 +1,19 @@
+<div class="articles-container">
+  <h2>Mes Articles</h2>
+
+  <div *ngIf="loading">Chargement...</div>
+  
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <div *ngIf="!loading && articles.length === 0">
+    Aucun article pour le moment.
+  </div>
+
+  <ul *ngIf="!loading && articles.length > 0">
+    <li *ngFor="let article of articles">
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.content }}</p>
+      <small>Catégorie: {{ article.category?.name || 'Aucune' }}</small>
+    </li>
+  </ul>
+</div>
