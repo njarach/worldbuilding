@@ -1,0 +1,9 @@
+# Symfony
+api/vendor/
+api/var/
+api/.env.local
+
+# Angular
+front/node_modules/
+front/dist/
+front/.angular/
